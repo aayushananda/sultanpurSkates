@@ -3,14 +3,16 @@ import { Bowlby_One_SC, DM_Mono } from "next/font/google";
 import "./globals.css";
 
 // Use the fonts specified in the tailwind.config.ts
-const bowlbyOne = Bowlby_One_SC({
+const bowlby = Bowlby_One_SC({
   weight: "400",
+  display: 'swap',
   variable: "--font-bowlby-sc",
   subsets: ["latin"],
 });
 
 const dmMono = DM_Mono({
   weight: ["400", "500"],
+  display: 'swap',
   variable: "--font-dm-mono",
   subsets: ["latin"],
 });
@@ -28,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${bowlbyOne.variable} ${dmMono.variable} antialiased`}
+        className={`${bowlby.variable} ${dmMono.variable} antialiased font-mono font-medium text-zinc-800`}
         suppressHydrationWarning
       >
         {children}
