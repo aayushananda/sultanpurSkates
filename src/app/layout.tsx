@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Bowlby_One_SC, DM_Mono } from "next/font/google";
 
 import { Header } from "@/components/Header";
+import { SVGFilters } from "@/components/SVGFilters";
 import "./globals.css";
 
 
@@ -40,6 +41,10 @@ export default function RootLayout({
         <Header/>
         </main>
         {children}
+        <SVGFilters>
+
+        </SVGFilters>
+
       </body>
     </html>
   );
