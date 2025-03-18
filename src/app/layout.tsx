@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Bowlby_One_SC, DM_Mono } from "next/font/google";
+
+import { Header } from "@/components/Header";
 import "./globals.css";
+
 
 // Use the fonts specified in the tailwind.config.ts
 const bowlby = Bowlby_One_SC({
@@ -33,6 +36,9 @@ export default function RootLayout({
         className={`${bowlby.variable} ${dmMono.variable} antialiased font-mono font-medium text-zinc-800`}
         suppressHydrationWarning
       >
+        <main className="">
+        <Header/>
+        </main>
         {children}
       </body>
     </html>
