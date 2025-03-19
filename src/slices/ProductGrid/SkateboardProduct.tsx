@@ -2,10 +2,24 @@ import { Content, isFilled } from "@prismicio/client";
 import { PrismicNextImage } from "@prismicio/next";
 import { createClient } from "@/prismicio";
 import { FaStar } from "react-icons/fa6";
+
 import { ButtonLink } from "@/components/ButtonLink";
 import { HorizontalLine, VerticalLine } from "@/components/Line";
 import clsx from "clsx";
 import { Scribble } from "./Scribble";
+
+async function getDominantColor(url: string) {
+  const palleteURL = new URL(url);
+  palleteURL.searchParams.set("palette", "json");
+
+  const res = await fetch(palleteURL);
+  const json = await res.json();
+  console.log(json);
+
+  return (
+    json.dominant_colors.vibrant?.hex || json.dominant_colors.vibrant_light?.hex
+  );
+}
 
 type Props = {
   id: string;
@@ -24,6 +38,10 @@ export async function SkateboardProduct({ id }: Props) {
     ? `₹ ${product.data.price}`
     : "Price Not Available";
 
+  const dominantColor = isFilled.image(product.data.image)
+    ? await getDominantColor(product.data.image.url)
+    : undefined;
+
   return (
     <div className="group relative mx-auto w-90 max-w-72 px-8 pt-4">
       <VerticalLine className={clsx(VERTICAL_LINE_CLASSES, "left-4")} />
@@ -38,7 +56,7 @@ export async function SkateboardProduct({ id }: Props) {
         </span>
       </div>
       <div className="-mb-1 overflow-hidden py-4">
-        <Scribble className="absolute inset-0 h-full w-full" color={"#f00"}/>
+        <Scribble className="absolute inset-0 h-full w-full" color={dominantColor} />
         <PrismicNextImage
           alt=""
           field={product.data.image}
