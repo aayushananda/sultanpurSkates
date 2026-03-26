@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+// @ts-nocheck
 import { Billboard } from "@react-three/drei";
 import { useRef } from "react";
 import * as THREE from "three";

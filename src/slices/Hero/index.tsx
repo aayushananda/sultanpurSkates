@@ -10,7 +10,7 @@ import { Heading } from "@/components/Heading";
 import { ButtonLink } from "@/components/ButtonLink";
 import { WideLogo } from "./WideLogo";
 import { TallLogo } from "./TallLogo";
-import { InteractiveSkateboard } from "./InteractiveSkateboard";
+import { InteractiveSkateboardWrapper } from "./InteractiveSkateboardWrapper";
 
 const DEFAULT_DECK_TEXTURE = "/skateboard/Deck.webp";
 const DEFAULT_WHEEL_TEXTURE = "/skateboard/SkateWheel1.png";
@@ -25,7 +25,7 @@ export type HeroProps = SliceComponentProps<Content.HeroSlice>;
 /**
  * Component for "Hero" Slices.
  */
-const Hero = ({ slice }: HeroProps): JSX.Element => {
+const Hero = ({ slice }: HeroProps) => {
   const deckTextureURL =
     asImageSrc(slice.primary.skateboard_deck_texture) || DEFAULT_DECK_TEXTURE;
   const wheelTextureURL =
@@ -64,7 +64,7 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
         </div>
       </div>
 
-      <InteractiveSkateboard
+      <InteractiveSkateboardWrapper
         deckTextureURL={deckTextureURL}
         wheelTextureURL={wheelTextureURL}
         truckColor={truckColor}
