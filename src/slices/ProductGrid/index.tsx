@@ -6,6 +6,7 @@ import {
   SliceComponentProps,
 } from "@prismicio/react";
 import { Bounded } from "@/components/Bounded";
+import { PrismicNextLink } from "@prismicio/next";
 import { Heading } from "@/components/Heading";
 import { SkateboardProduct } from "./SkateboardProduct";
 

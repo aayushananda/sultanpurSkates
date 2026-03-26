@@ -1,9 +1,25 @@
-/* eslint-disable @next/next/no-page-custom-font */
 import type { Metadata } from "next";
+import { Bowlby_One_SC, DM_Mono } from "next/font/google";
 
 import { Header } from "@/components/Header";
 import { SVGFilters } from "@/components/SVGFilters";
 import "./globals.css";
+
+
+// Use the fonts specified in the tailwind.config.ts
+const bowlby = Bowlby_One_SC({
+  weight: "400",
+  display: 'swap',
+  variable: "--font-bowlby-sc",
+  subsets: ["latin"],
+});
+
+const dmMono = DM_Mono({
+  weight: ["400", "500"],
+  display: 'swap',
+  variable: "--font-dm-mono",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Suburbia Sultanpur",
@@ -17,21 +33,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=DM+Mono:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet" />
-        <style dangerouslySetInnerHTML={{
-          __html: `
-            :root {
-              --font-bowlby-sc: "Bowlby One SC", sans-serif;
-              --font-dm-mono: "DM Mono", monospace;
-            }
-          `
-        }} />
-      </head>
       <body
-        className={`antialiased font-mono font-medium text-zinc-800`}
+        className={`${bowlby.variable} ${dmMono.variable} antialiased font-mono font-medium text-zinc-800`}
         suppressHydrationWarning
       >
         <main className="">

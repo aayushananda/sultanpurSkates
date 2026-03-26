@@ -30,6 +30,8 @@ export default async function Page() {
 export async function generateMetadata(): Promise<Metadata> {
   const client = createClient();
   const page = await client.getSingle("homepage");
+  const slices= bundleTextAndImageSlices(page.data.slices);
+
   return {
     title: page.data.meta_title,
     description: page.data.meta_description,

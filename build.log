@@ -1,0 +1,135 @@
+
+> suburbia-sultanpur@0.1.0 build
+> next build
+
+ ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /home/bebop/package-lock.json as the root directory.
+ To silence this warning, set `outputFileTracingRoot` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/output#caveats for more information.
+ Detected additional lockfiles: 
+   * /home/bebop/Documents/Github/sultanpurSkates/package-lock.json
+
+   ▲ Next.js 15.5.14
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 2.7s
+   Linting and checking validity of types ...
+
+./src/app/layout.tsx
+2:10  Warning: 'Bowlby_One_SC' is defined but never used.  @typescript-eslint/no-unused-vars
+2:25  Warning: 'DM_Mono' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./src/app/page.tsx
+33:9  Warning: 'slices' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+
+./src/slices/ProductGrid/index.tsx
+9:10  Warning: 'PrismicNextLink' is defined but never used.  @typescript-eslint/no-unused-vars
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/app/api-reference/config/eslint#disabling-rules
+   Collecting page data ...
+   Generating static pages (0/9) ...
+   Generating static pages (2/9) 
+   Generating static pages (4/9) 
+   Generating static pages (6/9) 
+{
+  colors: [
+    { red: 0.227451, hex: '#3a2f30', blue: 0.188235, green: 0.184314 },
+    { red: 0.694118, hex: '#b1a999', blue: 0.6, green: 0.662745 },
+    { red: 0.839216, hex: '#d63d5d', blue: 0.364706, green: 0.239216 },
+    { red: 0.917647, hex: '#ea4c72', blue: 0.447059, green: 0.298039 },
+    { red: 0.945098, hex: '#f14c76', blue: 0.462745, green: 0.298039 },
+    { red: 0.956863, hex: '#f4517b', blue: 0.482353, green: 0.317647 }
+  ],
+  average_luminance: 0.638058,
+  dominant_colors: {
+    vibrant: { red: 0.952941, hex: '#f34e79', blue: 0.47451, green: 0.305882 },
+    muted_light: { red: 0.764706, hex: '#c3b9ad', blue: 0.678431, green: 0.72549 },
+    muted: { red: 0.572549, hex: '#926e69', blue: 0.411765, green: 0.431373 },
+    vibrant_dark: { red: 0.607843, hex: '#9b3d4f', blue: 0.309804, green: 0.239216 },
+    vibrant_light: { red: 0.992157, hex: '#fd7999', blue: 0.6, green: 0.47451 },
+    muted_dark: { red: 0.270588, hex: '#453737', blue: 0.215686, green: 0.215686 }
+  }
+}
+{
+  colors: [
+    {
+      red: 0.0745098,
+      hex: '#13120d',
+      blue: 0.0509804,
+      green: 0.0705882
+    },
+    { red: 0.32549, hex: '#534238', blue: 0.219608, green: 0.258824 },
+    { red: 0.611765, hex: '#9c8774', blue: 0.454902, green: 0.529412 },
+    { red: 0.717647, hex: '#b75648', blue: 0.282353, green: 0.337255 },
+    { red: 0.796078, hex: '#cbb9a5', blue: 0.647059, green: 0.72549 },
+    { red: 0.839216, hex: '#d6d6af', blue: 0.686275, green: 0.839216 }
+  ],
+  average_luminance: 0.58228,
+  dominant_colors: {
+    vibrant: { red: 0.717647, hex: '#b75648', blue: 0.282353, green: 0.337255 },
+    muted_light: { red: 0.819608, hex: '#d1bba6', blue: 0.65098, green: 0.733333 },
+    muted: { red: 0.564706, hex: '#90614e', blue: 0.305882, green: 0.380392 },
+    vibrant_dark: { red: 0.435294, hex: '#6f332e', blue: 0.180392, green: 0.2 },
+    vibrant_light: { red: 0.701961, hex: '#b3db91', blue: 0.568627, green: 0.858824 },
+    muted_dark: { red: 0.317647, hex: '#51322c', blue: 0.172549, green: 0.196078 }
+  }
+}
+{
+  colors: [
+    { red: 1, hex: '#ffffff', blue: 1, green: 1 },
+    { red: 0.780392, hex: '#c7dc68', blue: 0.407843, green: 0.862745 },
+    { red: 0.768627, hex: '#c4d14a', blue: 0.290196, green: 0.819608 },
+    { red: 0.682353, hex: '#aeb74f', blue: 0.309804, green: 0.717647 },
+    { red: 0.341176, hex: '#57672b', blue: 0.168627, green: 0.403922 },
+    { red: 0.14902, hex: '#262932', blue: 0.196078, green: 0.160784 }
+  ],
+  average_luminance: 0.478693,
+  dominant_colors: {
+    vibrant: { red: 0.768627, hex: '#c4d14a', blue: 0.290196, green: 0.819608 },
+    muted_light: { red: 0.72549, hex: '#b9bea7', blue: 0.654902, green: 0.745098 },
+    muted: { red: 0.564706, hex: '#909c52', blue: 0.321569, green: 0.611765 },
+    vibrant_dark: { red: 0.427451, hex: '#6d901a', blue: 0.101961, green: 0.564706 },
+    vibrant_light: { red: 0.87451, hex: '#dfe39a', blue: 0.603922, green: 0.890196 },
+    muted_dark: { red: 0.145098, hex: '#252e4a', blue: 0.290196, green: 0.180392 }
+  }
+}
+{
+  colors: [
+    { red: 0.431373, hex: '#6e2123', blue: 0.137255, green: 0.129412 },
+    { red: 0.658824, hex: '#a8a398', blue: 0.596078, green: 0.639216 },
+    { red: 0.776471, hex: '#c6c3bb', blue: 0.733333, green: 0.764706 },
+    { red: 0.835294, hex: '#d5d1cd', blue: 0.803922, green: 0.819608 },
+    { red: 0.862745, hex: '#dcdad7', blue: 0.843137, green: 0.854902 },
+    { red: 0.909804, hex: '#e8e7e6', blue: 0.901961, green: 0.905882 }
+  ],
+  average_luminance: 0.653724,
+  dominant_colors: {
+    vibrant: { red: 0.894118, hex: '#e41b27', blue: 0.152941, green: 0.105882 },
+    muted_light: { red: 0.807843, hex: '#ceb8b2', blue: 0.698039, green: 0.721569 },
+    muted: { red: 0.596078, hex: '#986d63', blue: 0.388235, green: 0.427451 },
+    vibrant_dark: { red: 0.572549, hex: '#920e1b', blue: 0.105882, green: 0.054902 },
+    vibrant_light: { red: 0.980392, hex: '#fa413b', blue: 0.231373, green: 0.254902 },
+    muted_dark: { red: 0.45098, hex: '#736e5c', blue: 0.360784, green: 0.431373 }
+  }
+}
+ ✓ Generating static pages (9/9)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                 Size  First Load JS
+┌ ○ /                                      235 B         437 kB
+├ ○ /_not-found                            993 B         103 kB
+├ ƒ /api/exit-preview                      193 B         133 kB
+├ ƒ /api/preview                           193 B         133 kB
+├ ƒ /api/revalidate                        123 B         102 kB
+├ ○ /icon.svg                                0 B            0 B
+└ ƒ /slice-simulator                     6.15 kB         442 kB
++ First Load JS shared by all             102 kB
+  ├ chunks/255-b907973371c9e4f0.js       45.8 kB
+  ├ chunks/4bd1b696-21f374d1156f834a.js  54.2 kB
+  └ other shared chunks (total)           1.9 kB
+
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
